@@ -22,6 +22,13 @@ body{
 }
 
 
+
+@layer base{
+    
+}
+
+
+
 @layer components{
     .icon{
         @apply w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 hover:border-primary text-slate-300 hover:bg-primary hover:text-white
@@ -35,7 +42,17 @@ body{
         @apply max-w-[120px] mx-4 py-4 grayscale opacity-60 transition duration-500 hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8
     }
     
+    .row{
+        @apply w-full px-4
+    }
+
+    
+    
 }
 
-
+@layer utilities{
+    .port-img{
+        @apply rounded-md shadow-md overflow-hidden
+    }
+}
     
